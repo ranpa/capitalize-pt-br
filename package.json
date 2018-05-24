@@ -27,6 +27,10 @@
   },
   "homepage": "https://github.com/ranpa/capitalize-pt-br#readme",
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-jest": "^23.0.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.2",
     "jest-cli": "^23.0.0"
   }

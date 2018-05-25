@@ -1,0 +1,8 @@
+deploy:
+  provider: npm
+  email: rangel@caueira.com.br
+  api_key:
+    secure: J/mJ22luNC69ONvwpl+xm/orRL3T2W3GNSVuf/Fs1e9W1htieEltSL2SIG0udNKkhOH4KbBEohDiO5UgCZIbn1Rq8YL/5BzijczCk1gp3QiUGa0P9bvY9H8CMhDWgFPySUiKCKDwsUOvkqpDOgrGW279UalGFRSalaX4ErtcfGTOyTMoOelFJB8Sb8pWsH2Ewoftam/26f6bZph4yI2ebSxlh64k8A7t748wh8jvSasS0QSa3zNS+GZv2GLPlfROuRVjRh0Sc+zM+HKsKBGLnIPNDeokG54srri1T/4ESNNwZVAg0/7XetycZgsxuq0jxWJ5HXCo6V8YUS3niXDlWsSV5FQuA5lUlSHG5+gnyKfO3okJZpJBD6oc/Z7+3T9u8LbijRTU/wfVi//6TaVGP4u/Sy5eO45FgWiA1ytgmcGf5Qox7wXtY4iwX+lCB1rZcS3hdXcB36Ww9iQ4ZkZZIPbi0kZgTrQzWdgCxreWinx4nNmKH7V+iF5oipTZyIbLslVUbMsHXoVWc/U2oJMbXzeTks5qWFEf5Vs+1Co8d7XoNzzCPGwFwjN1tEWmUz2ri/kQm/TiDGVEbeTu/yIroeJQO8PHDbPGPTFWDC9jn4ZyNwj6p2Jc//tLiNQPasGeQ93x5M9IwXqD6PZi6pwobXdVTxUYvBzCFuFqyCcqJvI=
+  on:
+    tags: true
+    repo: ranpa/capitalize-pt-br

@@ -4,7 +4,7 @@
   "description": "A library for capitalizing each word's first letter of a given string",
   "main": "dist/capitalize-pt-br.min.js",
   "scripts": {
-    "build": "rollup -c",
+    "build": "cross-env NODE_ENV=production rollup -c",
     "test": "jest --coverage",
     "test:watch": "npm test -- --watch"
   },
@@ -34,6 +34,7 @@
     "babel-preset-env": "^1.7.0",
     "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.2",
+    "cross-env": "^5.1.6",
     "jest-cli": "^23.0.0",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-uglify": "^4.0.0"

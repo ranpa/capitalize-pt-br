@@ -4,6 +4,8 @@ node_js:
 branches:
   only:
     - master
+install:
+  - npm install -g rollup
 script:
   - npm run build
 deploy:

@@ -1,3 +1,13 @@
 {
-  "presets": ["env", "stage-0"]
+  "env": {
+    "test": {
+      "presets": ["env", "stage-0"]
+    },
+    "production": {
+      "presets": [
+        ["env", { "modules": false }], "stage-0"
+      ],
+      "plugins": ["external-helpers"],
+    }
+  }
 }

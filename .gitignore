@@ -1,5 +1,7 @@
 # Created by https://www.gitignore.io/api/git,node,linux,macos,windows
 
+dist/
+
 ### Git ###
 *.orig
 

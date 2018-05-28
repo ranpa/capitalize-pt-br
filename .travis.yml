@@ -12,8 +12,9 @@ script:
   - npm run build
 deploy:
   provider: npm
-  email: rangel@caueira.com.br
+  email: "rangel@caueira.com.br"
   api_key:
-    secure: $npm_token
+    secure: "$npm_token"
   on:
     repo: ranpa/capitalize-pt-br
+  tag: next

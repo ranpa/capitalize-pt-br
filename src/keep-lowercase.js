@@ -9,6 +9,7 @@ const keepLowercase = [
   'do',
   'dos',
   'e',
+  'em',
   'i',
   'na',
   'nas',

@@ -55,6 +55,12 @@ describe('With prepositions', () => {
     const after = 'A Transformação Continua'
     expect(capitalize(before)).to.be.equal(after)
   })
+
+  it('capitalize("ARACAJU EM BOAS MÃOS") should return "Aracaju em Boas Mãos"', () => {
+    const before = 'ARACAJU EM BOAS MÃOS'
+    const after = 'Aracaju em Boas Mãos'
+    expect(capitalize(before)).to.be.equal(after)
+  })
 })
 
 describe('With initials', () => {

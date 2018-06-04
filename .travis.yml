@@ -6,7 +6,6 @@ branches:
     - master
 install:
   - npm install -g rollup
-  - npm install -g cross-env
   - npm install
 script:
   - npm test
@@ -18,4 +17,10 @@ deploy:
     secure: $npm_token
   skip_cleanup: true
   on:
-    repo: ranpa/capitalize-pt-br
+    branch: master
+notifications:
+  email:
+    recipients:
+    - $npm_email
+    on_success: change
+    on_failure: always

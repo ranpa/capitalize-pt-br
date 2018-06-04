@@ -1,6 +1,6 @@
 # Capitalize PT-BR
 
-Biblioteca para transformar em maiúscula a primeira letra de cada palavra. Preposições normalmente não serão tranformadas, a não ser que estejam no início da frase. Todas as letreas de siglas devem ser transformadas em maiúscula.
+Biblioteca para transformar a primeira letra de cada palavra em maiúscula. Preposições normalmente não serão tranformadas, a não ser que estejam no início da frase. Todas as letreas de siglas devem ser transformadas em maiúscula.
 
 ## Exemplos
 

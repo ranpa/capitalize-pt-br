@@ -27,22 +27,22 @@ Utilize a biblioteca na página desejada
 
 ### Padrão
 
-```
+```javascript
 const capitalize = require('capitalize-pt-br')
 capitalize('HELLO WORLD')
-// > Hello World
+// Hello World
 ```
 
 ### Indicando lista de palavras que devem ser minúsculas
 
-```
+```javascript
 capitalize('HELLO WORLD', ['word'])
-// > Hello word
+// Hello word
 ```
 
 ### Indicando lista de palavras que devem ser maiúsculas
 
-```
+```javascript
 capitalize('HELLO WORLD', ['world'], ['hello'])
-// > HELLO word
+// HELLO word
 ```

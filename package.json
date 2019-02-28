@@ -1,6 +1,6 @@
 {
   "name": "capitalize-pt-br",
-  "version": "0.2.3",
+  "version": "0.3.0",
   "description": "A library for capitalizing each word's first letter of a given string",
   "main": "dist/capitalize-pt-br.min.js",
   "scripts": {

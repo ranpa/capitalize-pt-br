@@ -4,6 +4,10 @@ import keepLowercaseList from './keep-lowercase'
 import keepUppercaseList from './keep-uppercase'
 
 const capitalize = (string, lowercaseWords = [], uppercaseWords = []) => {
+  if (typeof(string) !== 'string') {
+    return string
+  }
+
   const keepLowercase = [...keepLowercaseList, ...lowercaseWords]
   const keepUppercase = [...keepUppercaseList, ...uppercaseWords]
 

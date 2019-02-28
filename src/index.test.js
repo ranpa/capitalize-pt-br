@@ -8,6 +8,18 @@ describe('Basic use cases', () => {
     expect(capitalize).to.be.a('function')
   })
 
+  it('capitalize(null) should return null', () => {
+    expect(capitalize(null)).to.be.equal(null)
+  })
+
+  it('capitalize(undefined) should return undefined', () => {
+    expect(capitalize(undefined)).to.be.equal(undefined)
+  })
+
+  it('capitalize(123) should return 123', () => {
+    expect(capitalize(123)).to.be.equal(123)
+  })
+
   it('capitalize("") should return ""', () => {
     expect(capitalize('')).to.be.equal('')
   })

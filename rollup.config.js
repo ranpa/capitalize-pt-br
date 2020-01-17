@@ -3,6 +3,7 @@
 import path from 'path'
 import babel from 'rollup-plugin-babel'
 import { uglify } from 'rollup-plugin-uglify'
+import copy from 'rollup-plugin-copy'
 
 const configuration = {
   input: path.join(__dirname, 'src', 'index.js'),
@@ -15,6 +16,9 @@ const configuration = {
       exclude: 'node_modules/**',
     }),
     uglify(),
+    copy({
+      targets: [{ src: 'src/index.d.ts', dest: 'dist' }]
+    })
   ],
 }
 

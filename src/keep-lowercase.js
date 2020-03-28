@@ -10,7 +10,6 @@ const keepLowercase = [
   'dos',
   'e',
   'em',
-  'i',
   'na',
   'nas',
   'no',
@@ -18,7 +17,6 @@ const keepLowercase = [
   'o',
   'por',
   'sem',
-  'u',
 ]
 
 export default keepLowercase

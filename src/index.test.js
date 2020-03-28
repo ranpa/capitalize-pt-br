@@ -72,6 +72,12 @@ describe('With prepositions', () => {
     const after = 'Aracaju em Boas Mãos'
     expect(capitalize(before)).toEqual(after)
   })
+
+  it('capitalize("D. PEDRO I") should return "D. Pedro I"', () => {
+    const before = 'D. PEDRO I'
+    const after = 'D. Pedro I'
+    expect(capitalize(before)).toEqual(after)
+  })
 })
 
 describe('With initials', () => {

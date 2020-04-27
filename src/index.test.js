@@ -92,4 +92,16 @@ describe('With initials', () => {
     const after = 'CNPJ da Empresa X'
     expect(capitalize(before)).toEqual(after)
   })
+
+  it('capitalize("EMPRESA LTDA ME") should return "Empresa LTDA ME"', () => {
+    const before = 'EMPRESA LTDA ME'
+    const after = 'Empresa LTDA ME'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("SANTANDER SA") should return "Santander SA"', () => {
+    const before = 'SANTANDER SA'
+    const after = 'Santander SA'
+    expect(capitalize(before)).toEqual(after)
+  })
 })

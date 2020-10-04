@@ -6,6 +6,12 @@ const keepUppercase = [
   'ltda',
   'qp',
   'tv',
+  'mei', 
+  'me', 
+  'ei',
+  'epp',
+  'eireli', 
+  'sa'
 ]
 
 export default keepUppercase

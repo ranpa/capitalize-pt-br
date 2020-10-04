@@ -2,7 +2,7 @@
 
 import path from 'path'
 import babel from 'rollup-plugin-babel'
-import { uglify } from 'rollup-plugin-uglify'
+import { terser } from 'rollup-plugin-terser'
 import copy from 'rollup-plugin-copy'
 
 const configuration = {
@@ -10,12 +10,13 @@ const configuration = {
   output: {
     file: path.join(__dirname, 'dist', 'capitalize-pt-br.min.js'),
     format: 'cjs',
+    exports: 'default',
   },
   plugins: [
     babel({
       exclude: 'node_modules/**',
     }),
-    uglify(),
+    terser(),
     copy({
       targets: [{ src: 'src/index.d.ts', dest: 'dist' }]
     })

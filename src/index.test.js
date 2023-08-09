@@ -105,3 +105,41 @@ describe('With initials', () => {
     expect(capitalize(before)).toEqual(after)
   })
 })
+
+describe('With Acronyms', () => {
+  it('capitalize("O BNDES FOI RESPONSÁVEL") should return "O BNDES Foi Responsável"', () => {
+    const before = 'O BNDES FOI RESPONSÁVEL'
+    const after = 'O BNDES Foi Responsável'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("ELA NASCEU EM SE") should return "Ela Nasceu em SE"', () => {
+    const before = 'ELA NASCEU EM SE'
+    const after = 'Ela Nasceu em SE'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("A UFS FOI ELEITA") should return "A UFS Foi Eleita"', () => {
+    const before = 'A UFS FOI ELEITA'
+    const after = 'A UFS Foi Eleita'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("C.E. PRES COSTA E SILVA") should return "C.E. Pres Costa e Silva"', () => {
+    const before = 'C.E. PRES COSTA E SILVA'
+    const after = 'C.E. Pres Costa e Silva'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("O .C.E. PRES COSTA E SILVA") should return "O .c.e. Pres Costa e Silva"', () => {
+    const before = 'O .C.E. PRES COSTA E SILVA'
+    const after = 'O .c.e. Pres Costa e Silva'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("C..E PRES COSTA E SILVA") should return "C..e Pres Costa e Silva"', () => {
+    const before = 'C..E PRES COSTA E SILVA'
+    const after = 'C..e Pres Costa e Silva'
+    expect(capitalize(before)).toEqual(after)
+  })
+})

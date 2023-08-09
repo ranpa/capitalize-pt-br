@@ -58,4 +58,10 @@ describe('Basic use cases', () => {
     const after = false
     expect(isAcronomy(before)).toEqual(after)
   })
+
+  it('isAcronomy("A...D.") should return false', () => {
+    const before = 'A...D.'
+    const after = false
+    expect(isAcronomy(before)).toEqual(after)
+  })
 })

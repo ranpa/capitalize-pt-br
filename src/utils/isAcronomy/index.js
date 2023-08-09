@@ -9,7 +9,12 @@ function isAcronomy(str) {
   for (let i = 0; i < str.length; i++) {
     const char = str[i]
 
-    if (i % 2 !== 0 && char !== ACRONOMY_SEPARATOR) return false
+    if (
+      (i % 2 !== 0 && char !== ACRONOMY_SEPARATOR) ||
+      (i % 2 === 0 && char === ACRONOMY_SEPARATOR)
+    ) {
+      return false
+    }
   }
 
   return true

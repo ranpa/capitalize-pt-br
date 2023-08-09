@@ -105,3 +105,23 @@ describe('With initials', () => {
     expect(capitalize(before)).toEqual(after)
   })
 })
+
+describe('With Acronyms', () => {
+  it('capitalize("O BANCO BNDES FOI RESPONSÁVEL") should return "O Banco BNDES Foi Responsável"', () => {
+    const before = 'O BANCO BNDES FOI RESPONSÁVEL'
+    const after = 'O Banco BNDES Foi Responsável'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("ELA NASCEU EM SE") should return "Ela Nasceu em SE"', () => {
+    const before = 'ELA NASCEU EM SE'
+    const after = 'Ela Nasceu em SE'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("A UFS FOI ELEITA") should return "A UFS Foi Eleita"', () => {
+    const before = 'A UFS FOI ELEITA'
+    const after = 'A UFS Foi Eleita'
+    expect(capitalize(before)).toEqual(after)
+  })
+})

@@ -34,7 +34,7 @@ const familiarAcronomys = [
   'puc'
 ]
 
-const brazilianStates = [
+const brazilianStatesAcronomys = [
   'ac',
   'al',
   'ap',
@@ -133,7 +133,7 @@ const brazilianUniversitiesAcronomys = [
 
 const acronomys = [
   ...familiarAcronomys,
-  ...brazilianStates,
+  ...brazilianStatesAcronomys,
   ...brazilianUniversitiesAcronomys
 ]
 

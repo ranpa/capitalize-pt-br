@@ -2,6 +2,7 @@
 
 import keepLowercaseList from './keep-lowercase'
 import keepUppercaseList from './keep-uppercase'
+import isAcronomy from './utils/isAcronomy'
 
 const capitalize = (string, lowercaseWords = [], uppercaseWords = []) => {
   if (typeof(string) !== 'string') {
@@ -18,9 +19,9 @@ const capitalize = (string, lowercaseWords = [], uppercaseWords = []) => {
       const lowercase = word.toLowerCase()
       return (keepLowercase.includes(lowercase) && index !== 0)
         ? lowercase
-        : keepUppercase.includes(lowercase)
+        : keepUppercase.includes(lowercase) || isAcronomy(word)
           ? lowercase.toUpperCase()
-          : `${word.charAt(0).toUpperCase()}${word.substr(1).toLowerCase()}`
+          : `${word.charAt(0).toUpperCase()}${word.slice(1).toLowerCase()}`
     })
     .join(' ')
 }

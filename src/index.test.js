@@ -124,4 +124,22 @@ describe('With Acronyms', () => {
     const after = 'A UFS Foi Eleita'
     expect(capitalize(before)).toEqual(after)
   })
+
+  it('capitalize("C.E. PRES COSTA E SILVA") should return "C.E. Pres Costa e Silva"', () => {
+    const before = 'C.E. PRES COSTA E SILVA'
+    const after = 'C.E. Pres Costa e Silva'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("O .C.E. PRES COSTA E SILVA") should return "O .c.e. Pres Costa e Silva"', () => {
+    const before = 'O .C.E. PRES COSTA E SILVA'
+    const after = 'O .c.e. Pres Costa e Silva'
+    expect(capitalize(before)).toEqual(after)
+  })
+
+  it('capitalize("C..E. PRES COSTA E SILVA") should return "C..e. Pres Costa e Silva"', () => {
+    const before = 'C..E. PRES COSTA E SILVA'
+    const after = 'C..e. Pres Costa e Silva'
+    expect(capitalize(before)).toEqual(after)
+  })
 })

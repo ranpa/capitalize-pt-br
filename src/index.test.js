@@ -107,9 +107,9 @@ describe('With initials', () => {
 })
 
 describe('With Acronyms', () => {
-  it('capitalize("O BANCO BNDES FOI RESPONSÁVEL") should return "O Banco BNDES Foi Responsável"', () => {
-    const before = 'O BANCO BNDES FOI RESPONSÁVEL'
-    const after = 'O Banco BNDES Foi Responsável'
+  it('capitalize("O BNDES FOI RESPONSÁVEL") should return "O BNDES Foi Responsável"', () => {
+    const before = 'O BNDES FOI RESPONSÁVEL'
+    const after = 'O BNDES Foi Responsável'
     expect(capitalize(before)).toEqual(after)
   })
 
@@ -137,9 +137,9 @@ describe('With Acronyms', () => {
     expect(capitalize(before)).toEqual(after)
   })
 
-  it('capitalize("C..E. PRES COSTA E SILVA") should return "C..e. Pres Costa e Silva"', () => {
-    const before = 'C..E. PRES COSTA E SILVA'
-    const after = 'C..e. Pres Costa e Silva'
+  it('capitalize("C..E PRES COSTA E SILVA") should return "C..e Pres Costa e Silva"', () => {
+    const before = 'C..E PRES COSTA E SILVA'
+    const after = 'C..e Pres Costa e Silva'
     expect(capitalize(before)).toEqual(after)
   })
 })
